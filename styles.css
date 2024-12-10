@@ -1,0 +1,209 @@
+html {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:14px;
+    scroll-behavior: smooth;
+}
+
+body {
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    font-size: 81px;
+}
+h2 {
+    font-size: 50px;
+}
+h3 {
+    font-size: 31px;
+}
+h4 {
+    font-size: 19px;
+}
+
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+    background-color: white;
+    font-size: 18px;
+}
+.navImage {
+    display: flex;
+    align-items: center; 
+    width: auto;
+    height: 40px;
+    margin-left: 2rem;
+}
+.navImage img {
+    height: 100%; 
+}
+.navList {
+    display: flex; 
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    padding-right: 1rem;
+}
+.navList li {
+    margin-left: 20px; 
+    flex-wrap: wrap;
+}
+
+.navLink {
+    text-decoration: none;
+    color: black; 
+}
+#headerContainer {
+    display: flex;
+    justify-content: space-between; 
+    flex-direction: row;
+    align-items: center; 
+    margin: 8rem 12rem 0 12rem;
+}
+.headerContainer__intro {
+    padding: 2rem;
+    width: 63%;
+    text-justify:auto;
+}
+.headerContainer__intro--bold {
+    font-weight: bolder;
+}
+#carteContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+    align-items: center; 
+    margin: 1rem 6rem 6rem 6rem;
+}
+#carteContainer h2 {
+    width: 100%;
+    text-align: center;
+}
+.carteParagraphe{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.carteItem__pates{
+    background-color: #A5B68D;
+    border: black 1px solid;
+    border-radius: 15px 0 0 15px;
+    width: 30%;
+    padding: 1rem 1rem 1.6rem 1rem ;
+}
+.carteItem__pizzas {
+    background-color: #FCFAEE;
+    border: black 1px solid;
+    width: 30%;
+    padding: 1rem 1rem 1.6rem 1rem ;
+}
+.carteItem__desserts {
+    background-color: #DA8359;
+    border: black 1px solid;
+    border-radius: 0 15px 15px 0;
+    width: 30%;
+    padding: 1rem 1rem 1.6rem 1rem ;
+}
+#galerieContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1rem 5rem 0rem 1rem;
+}
+#galerieContainer h2 {
+    width: 100%;
+    text-align: center;
+}
+.galerieListe {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; 
+    flex-wrap: wrap;
+}
+.galerieItem {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    padding: 1rem 2rem 1rem 2rem;
+}
+.galerieItem img{
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+}
+#formulaireContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+    border: black 3px solid;
+    background-color: #ff6347 ;
+    margin: 1rem 8.4em 1rem 8rem;
+}
+#formulaireContainer h4{
+    text-align: center;
+    width: 100%;
+}
+.formContainer {
+    justify-content: Center;
+    width: 50%;
+}
+.formDiv {
+    margin-top:.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.formSaisie {
+    width: 50%;
+    height: 1.5rem;
+    margin: .3rem;
+    border: black 3px solid;
+}
+.formButtons {
+    width: 51%;
+    height: 1.8rem;
+    margin: .3rem;
+    background-color: black;
+    color: snow;
+    border: black 3px solid;
+    font-weight: bold;
+}
+#footerContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    margin-top: 12rem;
+    border: black 4px Solid;
+    background-color: #dddddd;
+    top: 0;
+    left: 0;
+}
+.footerContact {
+    width: 50%;
+    margin: 2rem 2rem;
+}
+.footerContact__img {
+    margin-left: 2rem;
+    justify-content: center;
+}
+.footerContact__list {
+    list-style: none;
+}
+.footerContact__socials {
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
