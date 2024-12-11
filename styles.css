@@ -5,6 +5,7 @@ html {
 }
 body {
     transition: background-color 0.3s, color 0.3s;
+    background-color: #FCFAEE;
 }
 .dark-mode {
     background-color: #252525;
@@ -95,6 +96,9 @@ h4 {
 .headerContainer__intro--bold {
     font-weight: bolder;
 }
+.headerContainer__img img {
+    border-radius: 12px;
+}
 #carteContainer {
     display: flex;
     flex-direction: row;
@@ -177,13 +181,19 @@ h4 {
     justify-content: space-around;
     width: 350px;
 }
+
+.galerieItem img:hover{
+    transition: transform 1s;
+    transform: scale(1.1); 
+}
+
 #formulaireContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     max-width: 100%;
     border: black 3px solid;
-    background-color: #ff6347 ;
+    background-color: #A5B68D ;
     margin: 1rem 8.4em 1rem 8rem;
 }
 #formulaireContainer h4{

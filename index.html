@@ -6,7 +6,7 @@
     <title>Pasta La Vista</title>
     <link rel="stylesheet" href="styles.css">
     <!-- font sizes 81 / 50 / 31 / 19 / 12 / -->
-    <script src="index.js" ></script>
+    <!-- https://colorhunt.co/palette/a5b68decdfccfcfaeeda8359 -->
 </head>
 <body class="lightMode">
 
@@ -31,8 +31,8 @@
             <div class="headerContainer__intro">
                 <p>Bienvenue chez <span class="headerContainer__intro--bold">Pasta La Vista</span>, où la passion de la cuisine italienne se transmet depuis trois générations. Dans ce petit coin de paradis, nos pizzas au feu de bois, nos pâtes fraîches maison, et nos desserts gourmands célèbrent les saveurs authentiques du terroir italien. Inspirés par les recettes de notre Nonna Maria, chaque plat raconte une histoire de tradition et d'amour. Venez savourer un voyage culinaire comme en Italie, sans quitter votre ville !</p>
             </div>
-            <div class="headerContainer__imag">
-                <img src="assets/ph370x230.png" alt="logo du restaurant">
+            <div class="headerContainer__img">
+                <img src="assets/misterV.png" alt="logo du restaurant">
             </div>
         </section>
 
@@ -56,7 +56,7 @@
                 </ul>
             </div>
             <div class="carteItem__pizzas keep-original-colors">
-                <img src="assets/ph34x34.png"alt="">
+                <img src="assets/ph34x34.png" alt="">
                 <h4>Pizza</h4>
                 <ul class="cartePizza__liste">
                     <li class="cartePizza__Items">Margharita</li>
@@ -95,42 +95,42 @@
 
         <section id="formulaireContainer">
             <h4>Réservez votre table</h4>
-            <form action="/submit" method="post" class="formContainer">
-                <div class="formDiv">
-                    <input class="formSaisie" type="text" id="formName" placeholder="Nom et Prénom" name="formName" required>
-                </div>
-                <div class="formDiv">
-                    <input class="formSaisie" type="email" id="formEmail" placeholder="Email" name="fromEmail" required>
-                </div>
-                <div class="formDiv">
-                    <input class="formSaisie" type="number" id="formNumber" placeholder="Nombre de personnes" name="formNumber" required>
-                </div>
-                <div class="formDiv">
-                    <input class="formSaisie" type="date" id="formDate" placeholder="Date" name="formDate" required>
-                </div>
-                <div class="formDiv">
-                    <button class="formButtons">Je réserve</button>
-                </div>
-                <div class="formDiv">
-                    <p>Les réservations peuvent être annulées sans pénalité jusqu'à 48 heures avant la date et heure prévue de la réservation.</p>
-                </div>
-        </form>
+    <form action="/submit" method="post" class="formContainer" id="reservationForm">
+        <div class="formDiv">
+            <input class="formSaisie" type="text" id="formName" placeholder="Nom et Prénom" name="formName" >
+        </div>
+        <div class="formDiv">
+            <input class="formSaisie" type="email" id="formEmail" placeholder="Email" name="fromEmail" >
+        </div>
+        <div class="formDiv">
+            <input class="formSaisie" type="number" id="formNumber" placeholder="Nombre de personnes" name="formNumber" >
+        </div>
+        <div class="formDiv">
+            <input class="formSaisie" type="date" id="formDate" name="formDate" >
+        </div>
+        <div class="formDiv">
+            <button type="submit" class="formButtons">Je réserve</button>
+        </div>
+        <div class="formDiv">
+            <p>Les réservations peuvent être annulées sans pénalité jusqu'à 48 heures avant la date et heure prévue de la réservation.</p>
+        </div>
+    </form>
         </section>
     </main>
 
     <footer>
         <section id="footerContainer">
             <div class="footerContact">
-                <ul class="footerContact__list"">
-                    <li class="footerContact__item"><img lass="footerContact__img"src="assets/ph103x40.png" alt=""></li>
+                <ul class="footerContact__list">
+                    <li class="footerContact__item"><img class="footerContact__img" src="assets/ph103x40.png" alt=""></li>
                     <li class="footerContact__item footerContact__item--bold"><span>Adresse</span></li>
                     <li class="footerContact__item">34 Avenue Pétalouchnoque, Montcuq</li>
                     <li class="footerContact__item">Lot, France</li>
                 </ul>
                 <ul class="footerContact__socials">
-                    <li><img src="assets/ph34x34.png"alt=""></li>
-                    <li><img src="assets/ph34x34.png"alt=""></li>
-                    <li><img src="assets/ph34x34.png"alt=""></li>
+                    <li><img src="assets/ph34x34.png" alt=""></li>
+                    <li><img src="assets/ph34x34.png" alt=""></li>
+                    <li><img src="assets/ph34x34.png" alt=""></li>
                 </ul>
             </div>
             <div class="footerLinks">
@@ -169,6 +169,7 @@
         </section>
     </footer>
 
-</body>
+        <script src="index.js" ></script>
+
 </body>
 </html>
