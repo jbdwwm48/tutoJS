@@ -6,15 +6,16 @@
     <title>Pasta La Vista</title>
     <link rel="stylesheet" href="styles.css">
     <!-- font sizes 81 / 50 / 31 / 19 / 12 / -->
+    <script src="index.js"></script>
 </head>
-<body>
+<body class="lightMode">
 
     <header>
 
         <section id="navbarContainer">
             <nav id="navbar">
                 <div class="navImage">
-                    <img src="assets/ph103x40.png" alt="logo de la barre de navigation">
+                    <button onclick="darkMode()"><img src="assets/ph103x40.png" alt="logo de la barre de navigation"></button>
                 </div>
                 <ul class="navList">
                     <li><a class="navLink" href="#headerContainer">Qui Sommes Nous ?</a></li>
@@ -119,11 +120,11 @@
     <footer>
         <section id="footerContainer">
             <div class="footerContact">
-                <img lass="footerContact__img"src="assets/ph103x40.png" alt="">
                 <ul class="footerContact__list"">
-                    <li>Adresse</li>
-                    <li>34 Avenue Pétalouchnoque, Montcuq</li>
-                    <li>Lot, France</li>
+                    <li class="footerContact__item"><img lass="footerContact__img"src="assets/ph103x40.png" alt=""></li>
+                    <li class="footerContact__item footerContact__item--bold"><span>Adresse</span></li>
+                    <li class="footerContact__item">34 Avenue Pétalouchnoque, Montcuq</li>
+                    <li class="footerContact__item">Lot, France</li>
                 </ul>
                 <ul class="footerContact__socials">
                     <li><img src="assets/ph34x34.png"alt=""></li>
@@ -135,26 +136,26 @@
                 <table>
                     <thead>
                         <tr>
-                            <th>En-tête 1</th>
-                            <th>En-tête 2</th>
-                            <th>En-tête 3</th>
+                            <th class="footerLinks__thead">En-tête 1</th>
+                            <th class="footerLinks__thead">En-tête 2</th>
+                            <th class="footerLinks__thead">En-tête 3</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Ligne 1, Colonne 1</td>
-                            <td>Ligne 1, Colonne 2</td>
-                            <td>Ligne 1, Colonne 3</td>
+                            <td class="footerLinks__cell">Ligne 1, Colonne 1</td>
+                            <td class="footerLinks__cell">Ligne 1, Colonne 2</td>
+                            <td class="footerLinks__cell">Ligne 1, Colonne 3</td>
                         </tr>
                         <tr>
-                            <td>Ligne 2, Colonne 1</td>
-                            <td>Ligne 2, Colonne 2</td>
-                            <td>Ligne 2, Colonne 3</td>
+                            <td class="footerLinks__cell">Ligne 2, Colonne 1</td>
+                            <td class="footerLinks__cell">Ligne 2, Colonne 2</td>
+                            <td class="footerLinks__cell">Ligne 2, Colonne 3</td>
                         </tr>
                         <tr>
-                            <td>Ligne 3, Colonne 1</td>
-                            <td>Ligne 3, Colonne 2</td>
-                            <td>Ligne 3, Colonne 3</td>
+                            <td class="footerLinks__cell">Ligne 3, Colonne 1</td>
+                            <td class="footerLinks__cell">Ligne 3, Colonne 2</td>
+                            <td class="footerLinks__cell">Ligne 3, Colonne 3</td>
                         </tr>
                     </tbody>
                 </table>
@@ -162,7 +163,7 @@
         </section>
         <section id="legalsContainer">
             <div class="legalsItem">
-
+                <p class="legalsItem__Paragraph">Copyright © 2024 Past La Vista. Tous droits réservés.</p>
             </div>
         </section>
     </footer>

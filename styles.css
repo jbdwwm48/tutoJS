@@ -3,12 +3,19 @@ html {
     font-size:14px;
     scroll-behavior: smooth;
 }
-
-body {
+.lightMode {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e2dee8' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+.darkMode {
+    background-color: #3c3c3c;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.32' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+    color: snow;
+}
+    body {
     top: 0;
     left: 0;
 }
-
 h1 {
     font-size: 81px;
 }
@@ -21,7 +28,6 @@ h3 {
 h4 {
     font-size: 19px;
 }
-
 #navbar {
     position: fixed;
     display: flex;
@@ -119,7 +125,7 @@ h4 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 1rem 5rem 0rem 1rem;
+    margin: 1rem 5rem 0 1rem;
 }
 #galerieContainer h2 {
     width: 100%;
@@ -183,8 +189,9 @@ h4 {
 #footerContainer {
     display: flex;
     flex-wrap: wrap;
+    justify-self: center;
     justify-content: space-between;
-    max-width: 100%;
+    width: 100%;
     margin-top: 12rem;
     border: black 4px Solid;
     background-color: #dddddd;
@@ -192,18 +199,62 @@ h4 {
     left: 0;
 }
 .footerContact {
-    width: 50%;
-    margin: 2rem 2rem;
-}
-.footerContact__img {
-    margin-left: 2rem;
-    justify-content: center;
+    width: 45%;
+    margin: 1.5rem 2rem;
 }
 .footerContact__list {
     list-style: none;
+    margin: 1.5rem 0 1.5rem 0;
+}
+.footerContact__item img {
+    margin-bottom: 1.5rem;
+}
+.footerContact__list--item {
+    list-style: none;
+    margin: 1.5rem 0 1.5rem 0;
+}
+.footerContact__item {
+    list-style: none;
+    margin: 0 0 0 0;
+}
+.footerContact__item--bold {
+    font-weight: bold;
 }
 .footerContact__socials {
+    display: flex;
     list-style: none;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+.footerLinks {
+    display: flex;
+    flex-direction: row;
+    margin: 4rem 0 0;
+    width: 45%;
+}
+.footerLinks table{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    left: 0;
+    text-align: left;
+    text-justify: left;
+}
+.footerLinks__thead {
+    justify-content: start;
+    text-align: start;
+    padding: 0 0rem 0 6rem;
+        vertical-align: left;
+}
+.footerLinks tbody{
+    width: 100%;
+    padding: 0 6rem 0 6rem;
+}
+.footerLinks__cell{
+    padding: 1rem 0 1rem 0;
+}
+.legalsItem__Paragraph {
+    text-align: center;
+    font-size: 12px;
 }
