@@ -28,15 +28,19 @@ body.dark-mode .keep-original-colors__desserts {
 }
 h1 {
     font-size: 81px;
+    font-family: "Mrs Sheppards", cursive;
 }
 h2 {
     font-size: 50px;
+    font-family: "Mrs Sheppards", cursive;
 }
 h3 {
     font-size: 31px;
+    font-family: "Mrs Sheppards", cursive;
 }
 h4 {
     font-size: 19px;
+    font-family: "Mrs Sheppards", cursive;
 }
 #navbar {
     position: fixed;
